@@ -1,0 +1,178 @@
+:root {
+  --darkMainBg: hsl(217, 54%, 11%);
+  --darkCardBg: hsl(216, 50%, 16%);
+  --darkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Outfit", sans-serif;
+  background: var(--darkMainBg);
+  color: var(--softBlue);
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.color__white {
+  color: var(--white);
+}
+
+/* Container */
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card__container {
+  max-width: 327px;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background: var(--darkCardBg);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+
+/* CARD */
+
+.card {
+  max-width: 278px;
+  max-height: 278px;
+  position: relative;
+}
+
+.card__img {
+  border-radius: 8px;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.card::before {
+  background: var(--cyan);
+}
+
+.card::after {
+  background: url(../images/icon-view.svg) no-repeat center;
+}
+
+.card:hover::before,
+.card:focus::before {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.card:hover::after,
+.card:focus::after {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card__h1 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  transition: color 300ms ease;
+}
+
+.card__h2 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card__eth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  border-bottom: 2px solid var(--darkBlueLine);
+}
+
+.card__eth--eth {
+  display: flex;
+  align-items: center;
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.card__eth img {
+  max-width: 11px;
+  max-height: 18px;
+  margin-right: 0.5rem;
+}
+
+.card__days {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.card__days img {
+  max-width: 16px;
+  margin-right: 0.5rem;
+}
+
+.card__creation {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.card__creation img {
+  max-width: 33px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.card__author {
+  margin-left: 5px;
+  transition: color 300ms ease;
+}
+
+/* HOVER FOCUS */
+
+.card__author:hover,
+.card__author:focus,
+.card__h1:hover,
+.card__h1:focus {
+  color: var(--cyan);
+  cursor: pointer;
+}
