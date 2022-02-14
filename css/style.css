@@ -48,6 +48,7 @@ img {
 
 .card__container {
   max-width: 327px;
+  min-height: 543px;
   margin: 1.5rem;
   padding: 1.5rem;
   background: var(--darkCardBg);
@@ -59,7 +60,7 @@ img {
 
 .card {
   max-width: 278px;
-  max-height: 278px;
+  min-height: 278px;
   position: relative;
 }
 
@@ -175,4 +176,16 @@ img {
 .card__h1:focus {
   color: var(--cyan);
   cursor: pointer;
+}
+
+@media (min-width: 327px) {
+  .card__container {
+    max-width: 350px;
+    min-height: 596px;
+  }
+
+  .card {
+    max-width: 302px;
+    min-height: 302px;
+  }
 }
