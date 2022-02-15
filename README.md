@@ -38,7 +38,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### What I learned
 
-I learned more about reading the design guide, working with Figma, and match exactly how they've invisioned the design.
+I learned more about reading the design guide, working with Figma, and match exactly how they've invisioned the design. Also, had some great practice with ::before and ::after Pseudo-Classes.
 
 ## Author
 
