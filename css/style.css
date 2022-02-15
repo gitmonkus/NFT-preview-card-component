@@ -140,10 +140,10 @@ img {
   margin: 0;
 }
 
-.card__eth img {
+.card__eth--img {
   max-width: 11px;
   max-height: 18px;
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
 }
 
 .card__days {
@@ -156,7 +156,7 @@ img {
   margin-right: 1px;
 }
 
-.card__days img {
+.card__days--img {
   max-width: 16px;
   margin-right: 0.5rem;
 }
@@ -170,7 +170,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.card__creation img {
+.card__creation--img {
   max-width: 33px;
   border: 1px solid var(--white);
   border-radius: 50%;
