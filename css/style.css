@@ -153,6 +153,7 @@ img {
   font-weight: normal;
   line-height: 19px;
   margin: 0;
+  margin-right: 1px;
 }
 
 .card__days img {
