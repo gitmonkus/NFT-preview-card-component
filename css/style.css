@@ -127,6 +127,7 @@ img {
   line-height: 19px;
   border-bottom: 2px solid var(--darkBlueLine);
   padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .card__eth--eth {
@@ -163,6 +164,7 @@ img {
   align-items: center;
   font-size: 15px;
   line-height: 19px;
+  margin: 0;
 }
 
 .card__creation img {
