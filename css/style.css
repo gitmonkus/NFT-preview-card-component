@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  line-height: 1.6;
+  /* line-height: 1.6; */
   font-family: "Outfit", sans-serif;
   background: var(--darkMainBg);
   color: var(--softBlue);
