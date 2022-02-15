@@ -125,7 +125,7 @@ img {
   font-weight: 600;
   font-size: 15px;
   line-height: 19px;
-  border-bottom: 2px solid var(--darkBlueLine);
+  border-bottom: 1px solid var(--darkBlueLine);
   padding-bottom: 1.5rem;
   margin-bottom: 1rem;
 }
