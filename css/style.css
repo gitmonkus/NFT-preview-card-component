@@ -150,6 +150,7 @@ img {
   display: flex;
   align-items: center;
   font-size: 15px;
+  font-weight: normal;
   line-height: 19px;
   margin: 0;
 }
@@ -177,6 +178,9 @@ img {
 .card__author {
   margin-left: 5px;
   transition: color 300ms ease;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
 }
 
 /* HOVER FOCUS */
@@ -198,5 +202,13 @@ img {
   .card {
     max-width: 302px;
     /* min-height: 302px; */
+  }
+
+  .card__eth--eth,
+  .card__days,
+  .card__creation,
+  .card__author {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
