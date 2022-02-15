@@ -48,7 +48,7 @@ img {
 
 .card__container {
   max-width: 327px;
-  /* min-height: 543px; */
+  min-height: 543px;
   margin: 1.5rem;
   padding: 1.5rem;
   background: var(--darkCardBg);
@@ -192,7 +192,7 @@ img {
 @media (min-width: 327px) {
   .card__container {
     max-width: 350px;
-    /* min-height: 596px; */
+    min-height: 596px;
   }
 
   .card {
